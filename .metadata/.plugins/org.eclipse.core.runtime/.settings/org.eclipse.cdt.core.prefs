@@ -1,0 +1,5 @@
+config/build/cdt.launchMode=run
+config/build/cdt.toolChain.id=gcc-x86_64-/usr/bin/gcc
+config/build/cdt.toolChain.type=org.eclipse.cdt.build.gcc
+config/build/stdbuild.build.container=/build/build/default
+eclipse.preferences.version=1

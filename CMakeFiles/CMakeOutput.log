@@ -1,0 +1,800 @@
+The target system is: Linux -  - aarch64
+The host system is: Linux - 5.15.0-134-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc 
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/wave/catkin_ws/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ 
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/wave/catkin_ws/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_09872/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_09872.dir/build.make CMakeFiles/cmTC_09872.dir/build
+make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -v -o CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o -c /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_09872.dir/'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1 -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_09872.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o - |
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o
+GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708
+GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/
+End of search list.
+GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0259dc93fc6b4a90e7658dcd6503ecdb
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_09872
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09872.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now -v -rdynamic CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o -o cmTC_09872   -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib  -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib 
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_09872' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_09872.'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccu6maZM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_09872 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_09872' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_09872.'
+make[1]: Leaving directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/]
+  end of search list found
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include]
+  implicit include dirs: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include;/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_09872/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_09872.dir/build.make CMakeFiles/cmTC_09872.dir/build]
+  ignore line: [make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -v -o CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o -c /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_09872.dir/']
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1 -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_09872.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o - |]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o]
+  ignore line: [GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708]
+  ignore line: [GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0259dc93fc6b4a90e7658dcd6503ecdb]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_09872]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09872.dir/link.txt --verbose=1]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types  -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now -v -rdynamic CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o -o cmTC_09872   -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib  -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_09872' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_09872.']
+  link line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccu6maZM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_09872 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccu6maZM.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_09872] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_09872.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+  implicit dirs: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib;/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_3ffda/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_3ffda.dir/build.make CMakeFiles/cmTC_3ffda.dir/build
+make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -v -o CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o -c /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3ffda.dir/'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1plus -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -D_GNU_SOURCE /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3ffda.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o - |
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o
+GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708
+GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/
+End of search list.
+GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 159b3505348cf06d36707b86e28b4eb0
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_3ffda
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ffda.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now -v -rdynamic CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3ffda   -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib  -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib 
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_3ffda' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3ffda.'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLmNXJD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_3ffda /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_3ffda' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3ffda.'
+make[1]: Leaving directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+    add: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/]
+  end of search list found
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+  collapse include dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include]
+  implicit include dirs: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward;/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include;/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_3ffda/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_3ffda.dir/build.make CMakeFiles/cmTC_3ffda.dir/build]
+  ignore line: [make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -v -o CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o -c /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3ffda.dir/']
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1plus -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -D_GNU_SOURCE /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3ffda.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o - |]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708]
+  ignore line: [GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 159b3505348cf06d36707b86e28b4eb0]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_3ffda]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ffda.dir/link.txt --verbose=1]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types  -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now -v -rdynamic CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3ffda   -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib  -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_3ffda' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib' '-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3ffda.']
+  link line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLmNXJD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_3ffda /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccLmNXJD.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3ffda] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_3ffda.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o] ==> obj [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+  implicit dirs: [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib;/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_9d934/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_9d934.dir/build.make CMakeFiles/cmTC_9d934.dir/build
+make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d934.dir/CheckIncludeFile.c.o
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types  -o CMakeFiles/cmTC_9d934.dir/CheckIncludeFile.c.o -c /home/wave/catkin_ws/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9d934
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d934.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_9d934.dir/CheckIncludeFile.c.o -o cmTC_9d934 
+make[1]: Leaving directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_3c84f/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_3c84f.dir/build.make CMakeFiles/cmTC_3c84f.dir/build
+make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c84f.dir/src.c.o
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -DCMAKE_HAVE_LIBC_PTHREAD  -O2 -pipe -g -feliminate-unused-debug-types  -o CMakeFiles/cmTC_3c84f.dir/src.c.o -c /home/wave/catkin_ws/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3c84f
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c84f.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_3c84f.dir/src.c.o -o cmTC_3c84f 
+make[1]: Leaving directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Detecting C OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_fc8e4/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_fc8e4.dir/build.make CMakeFiles/cmTC_fc8e4.dir/build
+make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -o CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o -c /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_fc8e4.dir/'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1 -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -D_REENTRANT /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_fc8e4.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -fopenmp -o - |
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o
+GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708
+GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/
+End of search list.
+GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0259dc93fc6b4a90e7658dcd6503ecdb
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.'
+Linking C executable cmTC_fc8e4
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc8e4.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o -o cmTC_fc8e4  -v 
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+Reading specs from /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/libgomp.spec
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_fc8e4' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_fc8e4.'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccft4p8y.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_fc8e4 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_fc8e4' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_fc8e4.'
+make[1]: Leaving directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_fc8e4/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_fc8e4.dir/build.make CMakeFiles/cmTC_fc8e4.dir/build]
+  ignore line: [make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -o CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o -c /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_fc8e4.dir/']
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1 -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -D_REENTRANT /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_fc8e4.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -fopenmp -o - |]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o]
+  ignore line: [GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708]
+  ignore line: [GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0259dc93fc6b4a90e7658dcd6503ecdb]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.']
+  ignore line: [Linking C executable cmTC_fc8e4]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc8e4.dir/link.txt --verbose=1]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now  -rdynamic CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o -o cmTC_fc8e4  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [Reading specs from /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_fc8e4' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_fc8e4.']
+  link line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccft4p8y.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_fc8e4 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccft4p8y.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_fc8e4] ==> ignore
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_fc8e4.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+  implicit objs: []
+  implicit dirs: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_4bd62/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_4bd62.dir/build.make CMakeFiles/cmTC_4bd62.dir/build
+make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -o CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o -c /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4bd62.dir/'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1plus -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -D_GNU_SOURCE -D_REENTRANT /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_4bd62.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -fopenmp -o - |
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o
+GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708
+GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"
+ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed
+ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/
+End of search list.
+GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 159b3505348cf06d36707b86e28b4eb0
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.'
+Linking CXX executable cmTC_4bd62
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bd62.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o -o cmTC_4bd62  -v 
+Using built-in specs.
+COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (GCC) 
+COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/
+Reading specs from /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/libgomp.spec
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_4bd62' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_4bd62.'
+ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZmGCIE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_4bd62 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_4bd62' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_4bd62.'
+make[1]: Leaving directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/wave/catkin_ws/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make -f Makefile cmTC_4bd62/fast && /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/make  -f CMakeFiles/cmTC_4bd62.dir/build.make CMakeFiles/cmTC_4bd62.dir/build]
+  ignore line: [make[1]: Entering directory '/home/wave/catkin_ws/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -o CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o -c /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4bd62.dir/']
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/cc1plus -quiet -v -isysroot /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -D_GNU_SOURCE -D_REENTRANT /home/wave/catkin_ws/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_4bd62.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -fopenmp -o - |]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/as -v --gdwarf-5 -EL -mabi=lp64 -o CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [GNU assembler version 2.38 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.38.20220708]
+  ignore line: [GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/../../../../../aarch64-poky-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/aarch64-poky-linux]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/c++/11.3.0/backward]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/include]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/include-fixed]
+  ignore line: [ /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.3.0 (aarch64-poky-linux)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 159b3505348cf06d36707b86e28b4eb0]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.']
+  ignore line: [Linking CXX executable cmTC_4bd62]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bd62.dir/link.txt --verbose=1]
+  ignore line: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -O2 -pipe -g -feliminate-unused-debug-types -fopenmp -v -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now  -rdynamic CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o -o cmTC_4bd62  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../work-shared/gcc-11.3.0-r0/gcc-11.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.3.0 --with-build-time-tools=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/wave/yocto-real-time-edge/build-real-time-edge/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/11.3.0-r0/recipe-sysroot --enable-standard-branch-protection --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/]
+  ignore line: [Reading specs from /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_4bd62' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_4bd62.']
+  link line: [ /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2 -plugin /opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZmGCIE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_4bd62 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0 -L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0/crtendS.o /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/crtn.o]
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccZmGCIE.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4bd62] ==> ignore
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+    arg [-L/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_4bd62.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0]
+  collapse library dir [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib] ==> [/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: []
+  implicit dirs: [/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/lib;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/11.3.0;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/usr/lib]
+  implicit fwks: []
+
+

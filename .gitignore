@@ -1,0 +1,8 @@
+build/
+devel/
+data/
+testresult/
+.vscode/
+src.tar.xz
+src/.github/
+src/.vscode/
