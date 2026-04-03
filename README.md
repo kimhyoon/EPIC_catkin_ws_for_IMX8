@@ -9,4 +9,7 @@ Cross-compile ONLY!
 - Yocto build system
 - NXP SDK (from Yocto build)
 
+Memo:
+
+Do not delete build/ and devel/!
 

@@ -1,0 +1,1 @@
+/opt/nxp-real-time-edge/2.5/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgtest_main.so -o ../lib/libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/home/wave/catkin_ws/build/gtest/lib ../lib/libgtest.so 

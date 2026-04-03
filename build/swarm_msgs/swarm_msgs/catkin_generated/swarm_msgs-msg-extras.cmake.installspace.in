@@ -1,0 +1,2 @@
+set(swarm_msgs_MESSAGE_FILES "msg/swarm_fused.msg;msg/swarm_fused_relative.msg;msg/swarm_remote_command.msg;msg/swarm_drone_source_data.msg;msg/node_detected_xyzyaw.msg;msg/node_frame.msg;msg/swarm_frame.msg;msg/node_detected.msg;msg/swarm_detected.msg;msg/swarm_drone_basecoor.msg;msg/ImageDescriptor.msg;msg/LoopEdge.msg;msg/LoopEdges.msg;msg/FisheyeFrameDescriptor.msg")
+set(swarm_msgs_SERVICE_FILES "")

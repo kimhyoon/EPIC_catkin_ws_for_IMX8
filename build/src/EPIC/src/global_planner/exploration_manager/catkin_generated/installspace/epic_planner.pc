@@ -1,0 +1,8 @@
+prefix=/home/wave/catkin_ws/install
+
+Name: epic_planner
+Description: Description of epic_planner
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lepic_planner
+Requires: 

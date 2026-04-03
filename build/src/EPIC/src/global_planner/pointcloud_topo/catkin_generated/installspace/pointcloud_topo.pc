@@ -1,0 +1,8 @@
+prefix=/home/wave/catkin_ws/install
+
+Name: pointcloud_topo
+Description: Description of pointcloud_topo
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpointcloud_topo -lparallel_bubble_astar
+Requires: 

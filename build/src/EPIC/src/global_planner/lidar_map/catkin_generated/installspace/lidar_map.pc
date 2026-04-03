@@ -1,0 +1,8 @@
+prefix=/home/wave/catkin_ws/install
+
+Name: lidar_map
+Description: Description of lidar_map
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lunit_shpere -likd_tree
+Requires: 

@@ -1,0 +1,2 @@
+set(swarmcomm_msgs_MESSAGE_FILES "/home/wave/catkin_ws/src/swarm_msgs/swarmcomm_msgs/msg/remote_uwb_info.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmcomm_msgs/msg/incoming_broadcast_data.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmcomm_msgs/msg/data_buffer.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmcomm_msgs/msg/drone_network_status.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmcomm_msgs/msg/swarm_network_status.msg")
+set(swarmcomm_msgs_SERVICE_FILES "")
