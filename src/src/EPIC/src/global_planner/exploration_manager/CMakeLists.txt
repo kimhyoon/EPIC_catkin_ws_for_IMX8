@@ -60,6 +60,7 @@ find_package(catkin REQUIRED COMPONENTS
     lidar_map
     poly_traj
     message_filters
+    message_generation
   )
   message(STATUS "✅ epic_planner: ARM find_package")
   
@@ -123,9 +124,20 @@ else()
     lidar_map
     poly_traj
   message_filters
+  message_generation
   )
   message(STATUS "📍 epic_planner: Host find_package")
 endif()
+
+add_service_files(
+  FILES
+  GoalService.srv
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 # ✅ ARM 크로스 컴파일 시 catkin_package 조정
 if(CMAKE_CROSSCOMPILING AND CMAKE_SYSROOT)
@@ -139,7 +151,7 @@ else()
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES epic_planner
-    CATKIN_DEPENDS pointcloud_topo path_searching traj_utils lkh_tsp_solver plan_manage frontier_manager lidar_map
+    CATKIN_DEPENDS pointcloud_topo path_searching traj_utils lkh_tsp_solver plan_manage frontier_manager lidar_map message_runtime
 )
   message(STATUS "📍 epic_planner: Host catkin_package")
 endif()
@@ -168,12 +180,14 @@ endif()
 add_library(epic_planner
   src/fast_exploration_manager.cpp
 )
+add_dependencies(epic_planner ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_executable(exploration_node
   src/exploration_node.cpp
   src/fast_exploration_fsm.cpp
   src/fsm_utils.cpp
 )
+add_dependencies(exploration_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 # Custom Trajectory Sampler Node
 add_executable(custom_trajectory_sampler

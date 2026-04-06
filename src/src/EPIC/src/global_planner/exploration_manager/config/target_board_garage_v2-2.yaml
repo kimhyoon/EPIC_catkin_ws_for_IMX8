@@ -2,14 +2,14 @@
 # Heavily optimized for minimal computational load
 
 # Topic parameters - same as simulation
-odometry_topic: /odometry/imu_stamped
-cloud_topic: /lio_sam/mapping/cloud_registered_stamped
+odometry_topic: /quad_0/lidar_slam/odom
+cloud_topic: /quad0_pcl_render_node/cloud
 
 # LiDAR hardware parameters (for simulation compatibility)
 quad0_pcl_render_node:
   is_360lidar: 0
   vertical_fov: 42.0
-  sensing_horizon: 8
+  sensing_horizon: 12
   lidar_pitch: 40.0
   yaw_fov: 360.0
 
@@ -29,45 +29,45 @@ FrontierManager/view_frt: false
 # Graph parameters - TOPO SKELETON OPTIMIZED
 bubble_topo/min_x: 0.8
 bubble_topo/min_y: 0.8
-bubble_topo/min_z: 0.5
-bubble_topo/bubble_min_radius: 1.0
+bubble_topo/min_z: 0.6
+bubble_topo/bubble_min_radius: 0.8
 bubble_topo/init_region_size_x: 3.0
 bubble_topo/init_region_size_y: 3.0
 bubble_topo/init_region_size_z: 2.5
-bubble_topo/cube_discrete_size: 0.45
+bubble_topo/cube_discrete_size: 0.6
 bubble_topo/odom_node_distance: 6.0
-bubble_astar/safe_distance: 1.0
-bubble_astar/allocate_num: 4000
+bubble_astar/safe_distance: 0.8  #1.0
+bubble_astar/allocate_num: 4000  #4000
 
 # Map parameters - TOPO SKELETON OPTIMIZED
-max_update_region_num: 35000              # OPTIMIZED: 50000→35000 (faster processing)
-frontier/candidate_dphi: 0.35             # Increased from 0.26 (less candidates)
+max_update_region_num: 50000              # OPTIMIZED: 50000→35000 (faster processing)
+frontier/candidate_dphi: 0.30             # Increased from 0.26 (less candidates)
 frontier/candidate_znum: 2                # Reduced from 3 (fewer z-levels)
 
 # LiDAR perception - IKD-TREE INSERT OPTIMIZED
 lidar_perception/fov_up: 45.0
 lidar_perception/fov_down: -11.0
 lidar_perception/lidar_pitch: 40.0
-lidar_perception/fov_viewpoint_up: 40.0
-lidar_perception/fov_viewpoint_down: -9.0
+lidar_perception/fov_viewpoint_up: 45.0
+lidar_perception/fov_viewpoint_down: -11.0
 lidar_perception/max_ray_length: 16
 
 # Parallel processing - OPTIMIZED for faster node operations
-parallel_astar/update_connection_timeout: 0.008  # OPTIMIZED: 0.008→0.006 (faster timeouts)
-parallel_astar/insert_node_timeout: 0.008       # OPTIMIZED: 0.008→0.006 (faster insert)
+parallel_astar/update_connection_timeout: 0.006  # OPTIMIZED: 0.008→0.006 (faster timeouts)
+parallel_astar/insert_node_timeout: 0.006        # OPTIMIZED: 0.008→0.006 (faster insert)
 
 # Frontier management - optimized for less computation
-FrontierManager/cell_size: 0.5
+FrontierManager/cell_size: 0.6
 FrontierManager/noise_cell_range: 1
 FrontierManager/good_observation_direction_score: 0.7
-FrontierManager/good_observation_force_trust_length: 4.0
-FrontierManager/good_observation_trust_length: 12.0
-FrontierManager/update_length: 10.0 
+FrontierManager/good_observation_force_trust_length: 7.0
+FrontierManager/good_observation_trust_length: 10.0
+FrontierManager/update_length: 8.0 
 FrontierManager/cluster_max_size: 6.0
 FrontierManager/cluster_min_size: 1.5
-FrontierManager/cluster_min_radius: 1.0
+FrontierManager/cluster_min_radius: 0.7
 FrontierManager/cluster_direction_radius: 0.2
-FrontierManager/cluster_minmum_point_num: 4
+FrontierManager/cluster_minmum_point_num: 5
 
 # Viewpoint sampling - VP INSERT OPTIMIZED
 ViewpointManager/sample_pillar_min_height: 1.2
@@ -76,7 +76,7 @@ ViewpointManager/sample_pillar_height_layer_num: 1
 ViewpointManager/sample_pillar_min_radius: 2.0
 ViewpointManager/sample_pillar_max_radius: 3.5
 ViewpointManager/sample_pillar_radius_layer_num: 1
-ViewpointManager/sample_pillar_circle_sample_num: 6
+ViewpointManager/sample_pillar_circle_sample_num: 4
 ViewpointManager/local_tsp_size: 5
 
 # Exploration area
@@ -86,12 +86,12 @@ box_0/up: [182.0, 150.2, 3.8]
 dead_area_num: 0
 
 # Trajectory parameters - optimized for ARM processing
-max_traj_len: 10.0
+max_traj_len: 5.0
 DilateRadiusSoft: 0.7 # minco threshold
-DilateRadiusHard: 0.8 # collision check threshold
-MaxCorridorSize: 3.5
-MaxVelMag: 3.0
-maxBdrMag: 6000.0
+DilateRadiusHard: 0.6 # collision check threshold
+MaxCorridorSize: 3.0
+MaxVelMag: 2.5 #2.5
+maxBdrMag: 5000.0 #6000
 MaxTiltAngle: 0.4
 MinThrust: 15.0
 MaxThrust: 20.0
@@ -101,16 +101,17 @@ HorizDrag: 0.70
 VertDrag: 0.80
 ParasDrag: 0.01
 SpeedEps: 0.0001
-WeightT: 1500.0
+WeightT: 1500.0 #1500.0
 WeightSafeT: 300.0
 
 # Weight vector [pos_weight, vel_weight, omg_weight, theta_weight, thrust_weight]
-ChiVec: [1.5e+5, 1.0e+4, 8.0e+3, 8.0e+4, 8.0e+4]  # Reduced all weights
+ChiVec: [1.5e+5, 1.0e+4, 8.0e+3, 8.0e+4, 8.0e+4] 
+# Reduced all weights [1.5e+5, 1.0e+4, 8.0e+3, 8.0e+4, 8.0e+4]
 SmoothingEps: 0.02
-IntegralIntervs: 32
-RelCostTol: 5.0e-6
+IntegralIntervs: 16
+RelCostTol: 5.0e-6 #5.0e-6
 
 # Yaw optimization - reduced complexity
-yaw_max_vel: 4.0                     # Reduced from 4.0
+yaw_max_vel: 3.0                     # Reduced from 4.0
 yaw_rho_vis: 8000.0                  # Reduced from 10000.0
 yaw_time_fwd: 3.0                    # Reduced from 3.0 

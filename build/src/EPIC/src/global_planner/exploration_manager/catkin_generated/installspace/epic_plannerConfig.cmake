@@ -179,7 +179,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(epic_planner_EXPORTED_TARGETS "")
+set(epic_planner_EXPORTED_TARGETS "epic_planner_generate_messages_cpp;epic_planner_generate_messages_eus;epic_planner_generate_messages_lisp;epic_planner_generate_messages_nodejs;epic_planner_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${epic_planner_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -216,7 +216,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(epic_planner_EXPORTED_TARGETS ${${epic_planner_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "epic_planner-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${epic_planner_DIR}/${extra})

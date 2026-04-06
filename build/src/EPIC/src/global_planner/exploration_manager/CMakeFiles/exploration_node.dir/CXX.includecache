@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+/home/wave/catkin_ws/devel/include/epic_planner/GoalService.h
+ros/service_traits.h
+-
+epic_planner/GoalServiceRequest.h
+-
+epic_planner/GoalServiceResponse.h
+-
+
+/home/wave/catkin_ws/devel/include/epic_planner/GoalServiceRequest.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/wave/catkin_ws/devel/include/epic_planner/GoalServiceResponse.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TakeoffLand.h
 string
 -
@@ -84,6 +124,8 @@ vector
 visualization_msgs/Marker.h
 -
 std_msgs/Float32.h
+-
+epic_planner/GoalService.h
 -
 
 /home/wave/catkin_ws/src/src/EPIC/src/global_planner/exploration_manager/include/epic_planner/fast_exploration_manager.h

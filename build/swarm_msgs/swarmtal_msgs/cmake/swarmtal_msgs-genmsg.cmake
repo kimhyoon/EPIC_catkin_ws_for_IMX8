@@ -19,17 +19,17 @@ add_custom_target(swarmtal_msgs_generate_messages ALL)
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg" NAME_WE)
 add_custom_target(_swarmtal_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swarmtal_msgs" "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg" "geometry_msgs/Quaternion:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swarmtal_msgs" "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg" "geometry_msgs/Vector3:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg" NAME_WE)
 add_custom_target(_swarmtal_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swarmtal_msgs" "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg" "sensor_msgs/Imu:geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swarmtal_msgs" "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg" "geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header:sensor_msgs/Imu"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg" NAME_WE)
 add_custom_target(_swarmtal_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swarmtal_msgs" "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg" "geometry_msgs/Vector3:sensor_msgs/Imu:geometry_msgs/Quaternion:swarmtal_msgs/drone_pos_ctrl_cmd:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swarmtal_msgs" "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg" "geometry_msgs/Vector3:geometry_msgs/Point:swarmtal_msgs/drone_pos_ctrl_cmd:geometry_msgs/Quaternion:std_msgs/Header:sensor_msgs/Imu"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_onboard_command.msg" NAME_WE)
@@ -46,19 +46,19 @@ add_custom_target(_swarmtal_msgs_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_cpp(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_cpp(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_cpp(swarmtal_msgs
@@ -103,19 +103,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS swarmtal_msgs_generate_messages_cpp
 _generate_msg_eus(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_eus(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_eus(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_eus(swarmtal_msgs
@@ -160,19 +160,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS swarmtal_msgs_generate_messages_eus
 _generate_msg_lisp(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_lisp(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_lisp(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_lisp(swarmtal_msgs
@@ -217,19 +217,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS swarmtal_msgs_generate_messages_lis
 _generate_msg_nodejs(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_nodejs(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_nodejs(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_nodejs(swarmtal_msgs
@@ -274,19 +274,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS swarmtal_msgs_generate_messages_nod
 _generate_msg_py(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_py(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_control_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_py(swarmtal_msgs
   "/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_commander_state.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/swarm_msgs/swarmtal_msgs/msg/drone_pos_ctrl_cmd.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/swarmtal_msgs
 )
 _generate_msg_py(swarmtal_msgs

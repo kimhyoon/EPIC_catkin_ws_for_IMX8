@@ -1,0 +1,8 @@
+prefix=/home/wave/catkin_ws/devel
+
+Name: swarm_msgs
+Description: Description of swarm_msgs
+Version: 0.0.0
+Cflags: -I/home/wave/catkin_ws/devel/include -I/home/wave/catkin_ws/src/swarm_msgs/swarm_msgs/include
+Libs: -L${prefix}/lib 
+Requires: 

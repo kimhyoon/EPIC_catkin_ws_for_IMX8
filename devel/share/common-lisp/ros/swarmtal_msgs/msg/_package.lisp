@@ -1,0 +1,13 @@
+(cl:defpackage swarmtal_msgs-msg
+  (:use )
+  (:export
+   "<DRONE_COMMANDER_STATE>"
+   "DRONE_COMMANDER_STATE"
+   "<DRONE_ONBOARD_COMMAND>"
+   "DRONE_ONBOARD_COMMAND"
+   "<DRONE_POS_CONTROL_STATE>"
+   "DRONE_POS_CONTROL_STATE"
+   "<DRONE_POS_CTRL_CMD>"
+   "DRONE_POS_CTRL_CMD"
+  ))
+

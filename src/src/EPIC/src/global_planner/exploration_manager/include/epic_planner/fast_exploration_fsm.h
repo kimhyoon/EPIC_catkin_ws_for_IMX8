@@ -27,6 +27,7 @@
 #include <vector>
 #include <visualization_msgs/Marker.h>
 #include <std_msgs/Float32.h>
+#include <epic_planner/GoalService.h>
 
 using Eigen::Vector3d;
 using std::shared_ptr;
@@ -41,7 +42,7 @@ class PlanningVisualization;
 struct FSMParam;
 struct FSMData;
 
-enum EXPL_STATE { INIT, WAIT_TRIGGER, PLAN_TRAJ, CAUTION, EXEC_TRAJ, FINISH, LAND };
+enum EXPL_STATE { INIT, WAIT_TRIGGER, PLAN_TRAJ, PLAN_TRAJ_RTH, CAUTION, EXEC_TRAJ, FINISH, LAND };
 
 class FastExplorationFSM {
 private:
@@ -62,6 +63,7 @@ private:
   /* ROS utils */
   ros::NodeHandle node_;
   ros::Timer exec_timer_, global_path_update_timer_, local_planning_timer_;
+  ros::ServiceServer srv_goal_;
   ros::Subscriber trigger_sub_, map_update_sub_, battary_sub_;
   ros::Publisher stop_pub_, new_pub_, replan_pub_, poly_traj_pub_, heartbeat_pub_, time_cost_pub_, poly_yaw_traj_pub_, static_pub_, state_pub_,
   land_pub_;
@@ -74,6 +76,11 @@ private:
                  fast_searcher_search_cost_pub_, bubble_astar_search_cost_pub_;
   double total_time_;
 
+  /* goal-directed navigation */
+  Eigen::Vector4d goal_rth_;  // x, y, z, yaw
+  bool has_goal_rth_;
+  double goal_tolerance_;
+
   /*cloud odom callback*/
   typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::PointCloud2, nav_msgs::Odometry> SyncPolicyCloudOdom;
   typedef shared_ptr<message_filters::Synchronizer<SyncPolicyCloudOdom>> SynchronizerCloudOdom;
@@ -85,6 +92,7 @@ private:
 
   /* helper functions */
   int callExplorationPlanner();
+  int callGoalPlanner();
   void transitState(EXPL_STATE new_state, string pos_call, bool red = false);
   void battaryCallback(const sensor_msgs::BatteryStateConstPtr &msg);
   /* ROS functions */
@@ -97,6 +105,8 @@ private:
   void triggerCallback(const nav_msgs::PathConstPtr &msg);
   void odometryCallback(const nav_msgs::OdometryConstPtr &msg);
   void stopTraj();
+  bool goalServiceCallback(epic_planner::GoalService::Request& req,
+                          epic_planner::GoalService::Response& res);
 
   // void goal_cb(const geometry_msgs::PoseStamped::ConstPtr &msg);
   void visualize();

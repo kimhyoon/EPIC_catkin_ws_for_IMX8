@@ -1,0 +1,8 @@
+prefix=/home/wave/catkin_ws/devel
+
+Name: plan_manage
+Description: Description of plan_manage
+Version: 0.0.0
+Cflags: -I/home/wave/catkin_ws/src/src/EPIC/src/local_planner/minco_planner/include
+Libs: -L${prefix}/lib -lplan_manage
+Requires: 

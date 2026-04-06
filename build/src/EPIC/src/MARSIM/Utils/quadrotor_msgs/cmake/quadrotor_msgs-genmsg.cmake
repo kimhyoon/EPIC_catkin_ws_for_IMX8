@@ -64,7 +64,7 @@ add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg" NAME_WE)
 add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg" "std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg" "geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg" NAME_WE)
@@ -84,7 +84,7 @@ add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg" NAME_WE)
 add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg" "std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Quaternion:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg" "std_msgs/Header:geometry_msgs/Quaternion:quadrotor_msgs/AuxCommand:geometry_msgs/Vector3"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/StatusData.msg" NAME_WE)
@@ -99,7 +99,7 @@ add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg" NAME_WE)
 add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg" "geometry_msgs/PoseWithCovariance:geometry_msgs/TwistWithCovariance:geometry_msgs/Twist:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:std_msgs/Header:nav_msgs/Odometry:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg" "geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/TwistWithCovariance:nav_msgs/Odometry:geometry_msgs/Point:geometry_msgs/PoseWithCovariance:geometry_msgs/Pose"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PolynomialTrajectory.msg" NAME_WE)
@@ -144,12 +144,12 @@ add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg" NAME_WE)
 add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg" "std_msgs/Int64:geometry_msgs/Point:quadrotor_msgs/QuadrotorState:std_msgs/Header:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg" "std_msgs/Header:quadrotor_msgs/QuadrotorState:geometry_msgs/Point:geometry_msgs/Vector3:std_msgs/Int64"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg" NAME_WE)
 add_custom_target(_quadrotor_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg" "std_msgs/Header:geometry_msgs/Point:quadrotor_msgs/PositionCommand:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "quadrotor_msgs" "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg" "geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Point:quadrotor_msgs/PositionCommand"
 )
 
 get_filename_component(_filename "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg" NAME_WE)
@@ -220,7 +220,7 @@ _generate_msg_cpp(quadrotor_msgs
 _generate_msg_cpp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_cpp(quadrotor_msgs
@@ -244,7 +244,7 @@ _generate_msg_cpp(quadrotor_msgs
 _generate_msg_cpp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_cpp(quadrotor_msgs
@@ -262,7 +262,7 @@ _generate_msg_cpp(quadrotor_msgs
 _generate_msg_cpp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_cpp(quadrotor_msgs
@@ -316,13 +316,13 @@ _generate_msg_cpp(quadrotor_msgs
 _generate_msg_cpp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_cpp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_cpp(quadrotor_msgs
@@ -469,7 +469,7 @@ _generate_msg_eus(quadrotor_msgs
 _generate_msg_eus(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_eus(quadrotor_msgs
@@ -493,7 +493,7 @@ _generate_msg_eus(quadrotor_msgs
 _generate_msg_eus(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_eus(quadrotor_msgs
@@ -511,7 +511,7 @@ _generate_msg_eus(quadrotor_msgs
 _generate_msg_eus(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_eus(quadrotor_msgs
@@ -565,13 +565,13 @@ _generate_msg_eus(quadrotor_msgs
 _generate_msg_eus(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_eus(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_eus(quadrotor_msgs
@@ -718,7 +718,7 @@ _generate_msg_lisp(quadrotor_msgs
 _generate_msg_lisp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_lisp(quadrotor_msgs
@@ -742,7 +742,7 @@ _generate_msg_lisp(quadrotor_msgs
 _generate_msg_lisp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_lisp(quadrotor_msgs
@@ -760,7 +760,7 @@ _generate_msg_lisp(quadrotor_msgs
 _generate_msg_lisp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_lisp(quadrotor_msgs
@@ -814,13 +814,13 @@ _generate_msg_lisp(quadrotor_msgs
 _generate_msg_lisp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_lisp(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_lisp(quadrotor_msgs
@@ -967,7 +967,7 @@ _generate_msg_nodejs(quadrotor_msgs
 _generate_msg_nodejs(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_nodejs(quadrotor_msgs
@@ -991,7 +991,7 @@ _generate_msg_nodejs(quadrotor_msgs
 _generate_msg_nodejs(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_nodejs(quadrotor_msgs
@@ -1009,7 +1009,7 @@ _generate_msg_nodejs(quadrotor_msgs
 _generate_msg_nodejs(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_nodejs(quadrotor_msgs
@@ -1063,13 +1063,13 @@ _generate_msg_nodejs(quadrotor_msgs
 _generate_msg_nodejs(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_nodejs(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_nodejs(quadrotor_msgs
@@ -1216,7 +1216,7 @@ _generate_msg_py(quadrotor_msgs
 _generate_msg_py(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/OutputData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_py(quadrotor_msgs
@@ -1240,7 +1240,7 @@ _generate_msg_py(quadrotor_msgs
 _generate_msg_py(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_py(quadrotor_msgs
@@ -1258,7 +1258,7 @@ _generate_msg_py(quadrotor_msgs
 _generate_msg_py(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/TwistWithCovariance.msg;/opt/ros/noetic/share/nav_msgs/cmake/../msg/Odometry.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_py(quadrotor_msgs
@@ -1312,13 +1312,13 @@ _generate_msg_py(quadrotor_msgs
 _generate_msg_py(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_py(quadrotor_msgs
   "/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/MpcPositionCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/PositionCommand.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/quadrotor_msgs
 )
 _generate_msg_py(quadrotor_msgs

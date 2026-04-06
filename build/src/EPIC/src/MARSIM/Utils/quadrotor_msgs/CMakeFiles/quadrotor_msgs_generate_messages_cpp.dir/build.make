@@ -180,8 +180,8 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_mess
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/AuxCommand.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/SO3Command.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from quadrotor_msgs/SO3Command.msg"
@@ -204,15 +204,15 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_mess
 
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/Odometry.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from quadrotor_msgs/Odometry.msg"
 	cd /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs && /home/wave/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/Odometry.msg -Iquadrotor_msgs:/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg -Igeometry_msgs:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/wave/catkin_ws/devel/include/quadrotor_msgs -e /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/cmake/..
@@ -274,11 +274,11 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_mess
 
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/msg/Int64.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/QuadrotorState.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/msg/Int64.msg
 /home/wave/catkin_ws/devel/include/quadrotor_msgs/TrakingPerformance.h: /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating C++ code from quadrotor_msgs/TrakingPerformance.msg"
 	cd /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs && /home/wave/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/TrakingPerformance.msg -Iquadrotor_msgs:/home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg -Igeometry_msgs:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/wave/catkin_ws/devel/include/quadrotor_msgs -e /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/gencpp/cmake/..

@@ -1,0 +1,8 @@
+prefix=/home/wave/catkin_ws/devel
+
+Name: epic_planner
+Description: Description of epic_planner
+Version: 0.0.0
+Cflags: -I/home/wave/catkin_ws/devel/include -I/home/wave/catkin_ws/src/src/EPIC/src/global_planner/exploration_manager/include
+Libs: -L${prefix}/lib -lepic_planner
+Requires: 

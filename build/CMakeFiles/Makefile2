@@ -257,6 +257,7 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/clean: src/EPIC/src/MARSIM/Utils/quadro
 src/EPIC/src/global_planner/exploration_manager/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all
 src/EPIC/src/global_planner/exploration_manager/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
 src/EPIC/src/global_planner/exploration_manager/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all
+src/EPIC/src/global_planner/exploration_manager/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all
 
 .PHONY : src/EPIC/src/global_planner/exploration_manager/all
 
@@ -266,14 +267,26 @@ src/EPIC/src/global_planner/exploration_manager/preinstall:
 .PHONY : src/EPIC/src/global_planner/exploration_manager/preinstall
 
 # Recursive "clean" directory target.
-src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
-src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
 src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean
 src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean
-src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean
-src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
 src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/clean
 src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/clean
+src/EPIC/src/global_planner/exploration_manager/clean: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/clean
 
 .PHONY : src/EPIC/src/global_planner/exploration_manager/clean
 
@@ -710,7 +723,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtes
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -732,12 +745,12 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=5 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/rule
@@ -759,7 +772,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=5 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -786,12 +799,12 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=6 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/rule
@@ -845,7 +858,7 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genpy.dir/rule
@@ -1332,12 +1345,12 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_mess
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_oa_manager_debug.dir/all
 	$(MAKE) -f src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build.make src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build.make src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=70,71,72,73,74 "Built target quadrotor_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=70,71,72,73,74,75 "Built target quadrotor_msgs_generate_messages_py"
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/rule
@@ -1877,7 +1890,7 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_geneus.dir/al
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_geneus.dir/rule
@@ -2497,7 +2510,7 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_mess
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_oa_manager_debug.dir/all
 	$(MAKE) -f src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build.make src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build.make src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=49,50,51,52,53 "Built target quadrotor_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=50,51,52,53,54 "Built target quadrotor_msgs_generate_messages_cpp"
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2579,12 +2592,12 @@ src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_mess
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_oa_manager_debug.dir/all
 	$(MAKE) -f src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build.make src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build.make src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=54,55,56,57,58,59 "Built target quadrotor_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=55,56,57,58,59 "Built target quadrotor_msgs_generate_messages_eus"
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/rule
@@ -2931,7 +2944,7 @@ src/EPIC/src/global_planner/lidar_map/CMakeFiles/unit_shpere.dir/clean:
 src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/all:
 	$(MAKE) -f src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/build.make src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/depend
 	$(MAKE) -f src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/build.make src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target lkh_tsp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target lkh_tsp"
 .PHONY : src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2958,12 +2971,12 @@ src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/clean:
 src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all:
 	$(MAKE) -f src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/build.make src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/depend
 	$(MAKE) -f src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/build.make src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target lkh_tsp_solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target lkh_tsp_solver"
 .PHONY : src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/rule
@@ -3077,12 +3090,12 @@ swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/all
 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/all: swarm_msgs/swarmtal_msgs/CMakeFiles/_swarmtal_msgs_generate_messages_check_deps_drone_onboard_command.dir/all
 	$(MAKE) -f swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/build.make swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/build.make swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=95 "Built target swarmtal_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target swarmtal_msgs_generate_messages_lisp"
 .PHONY : swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_lisp.dir/rule
@@ -3163,7 +3176,7 @@ swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_geneus.dir/all: swarm_msgs/swa
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_geneus.dir/rule
@@ -3277,12 +3290,12 @@ swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/all:
 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/all: swarm_msgs/swarmtal_msgs/CMakeFiles/_swarmtal_msgs_generate_messages_check_deps_drone_onboard_command.dir/all
 	$(MAKE) -f swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/build.make swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/build.make swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target swarmtal_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=95 "Built target swarmtal_msgs_generate_messages_eus"
 .PHONY : swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_eus.dir/rule
@@ -3336,7 +3349,7 @@ swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_genlisp.dir/all: swarm_msgs/sw
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_genlisp.dir/rule
@@ -3450,12 +3463,12 @@ swarm_msgs/swarmtal_msgs/CMakeFiles/swarmtal_msgs_generate_messages_nodejs.dir/c
 src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all:
 	$(MAKE) -f src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/build.make src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/depend
 	$(MAKE) -f src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/build.make src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=48 "Built target poly_traj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target poly_traj"
 .PHONY : src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/rule
@@ -3477,12 +3490,12 @@ src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/clean:
 src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
 	$(MAKE) -f src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/build.make src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/depend
 	$(MAKE) -f src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/build.make src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target pointcloud_topo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=48 "Built target pointcloud_topo"
 .PHONY : src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/rule
@@ -3504,12 +3517,12 @@ src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/clean
 src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all:
 	$(MAKE) -f src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/build.make src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/depend
 	$(MAKE) -f src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/build.make src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target parallel_bubble_astar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=47 "Built target parallel_bubble_astar"
 .PHONY : src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/rule
@@ -3535,7 +3548,7 @@ src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all
 src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
 	$(MAKE) -f src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/build.make src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/depend
 	$(MAKE) -f src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/build.make src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=3 "Built target frontier_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target frontier_manager"
 .PHONY : src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3570,7 +3583,7 @@ src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/all: src
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/rule
@@ -3624,7 +3637,7 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_geneus.dir/all: swarm_msgs/swarm_msg
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_geneus.dir/rule
@@ -3763,7 +3776,7 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages.dir/all: swarm_msg
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages.dir/rule
@@ -3886,7 +3899,7 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_eus.dir/all: swarm
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_eus.dir/rule
@@ -4048,7 +4061,7 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gencpp.dir/all: swarm_msgs/swarm_msg
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gencpp.dir/rule
@@ -4112,7 +4125,7 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/all: swar
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/all: swarm_msgs/swarm_msgs/CMakeFiles/_swarm_msgs_generate_messages_check_deps_LoopEdge.dir/all
 	$(MAKE) -f swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/build.make swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/build.make swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=81,82 "Built target swarm_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=81,82,83 "Built target swarm_msgs_generate_messages_lisp"
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4157,12 +4170,12 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/all: swarm
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/all: swarm_msgs/swarm_msgs/CMakeFiles/_swarm_msgs_generate_messages_check_deps_LoopEdge.dir/all
 	$(MAKE) -f swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/build.make swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/build.make swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=75,76,77 "Built target swarm_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=76,77 "Built target swarm_msgs_generate_messages_cpp"
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_cpp.dir/rule
@@ -4229,12 +4242,12 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/all: sw
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/all: swarm_msgs/swarm_msgs/CMakeFiles/_swarm_msgs_generate_messages_check_deps_LoopEdge.dir/all
 	$(MAKE) -f swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/build.make swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/build.make swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=83,84,85 "Built target swarm_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=84,85 "Built target swarm_msgs_generate_messages_nodejs"
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_generate_messages_nodejs.dir/rule
@@ -4261,7 +4274,7 @@ swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gennodejs.dir/all: swarm_msgs/swarm_
 
 # Build rule for subdir invocation for target.
 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : swarm_msgs/swarm_msgs/CMakeFiles/swarm_msgs_gennodejs.dir/rule
@@ -4825,12 +4838,12 @@ swarm_msgs/swarmcomm_msgs/CMakeFiles/swarmcomm_msgs_geneus.dir/clean:
 src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/all:
 	$(MAKE) -f src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/build.make src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/depend
 	$(MAKE) -f src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/build.make src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target process_msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=49 "Built target process_msg"
 .PHONY : src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/process_msg.dir/rule
@@ -5219,7 +5232,7 @@ src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all: src/EPI
 src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
 	$(MAKE) -f src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/build.make src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/depend
 	$(MAKE) -f src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/build.make src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=47 "Built target plan_manage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target plan_manage"
 .PHONY : src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5287,12 +5300,12 @@ src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/all: s
 src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/all: src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all
 	$(MAKE) -f src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/build.make src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/depend
 	$(MAKE) -f src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/build.make src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target fast_planner_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=4 "Built target fast_planner_node"
 .PHONY : src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/all
 
 # Build rule for subdir invocation for target.
 src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
 .PHONY : src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/rule
@@ -5306,6 +5319,235 @@ fast_planner_node: src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_plan
 src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/clean:
 	$(MAKE) -f src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/build.make src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/clean
 .PHONY : src/EPIC/src/local_planner/minco_planner/CMakeFiles/fast_planner_node.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/ikd_tree.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/unit_shpere.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=3 "Built target exploration_node"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 53
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule
+
+# Convenience name for target.
+exploration_node: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule
+
+.PHONY : exploration_node
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/ikd_tree.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/unit_shpere.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 52
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/rule
+
+# Convenience name for target.
+epic_planner: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/rule
+
+.PHONY : epic_planner
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_generate_messages_py"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_py: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule
+
+.PHONY : epic_planner_generate_messages_py
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_generate_messages_nodejs"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_nodejs: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule
+
+.PHONY : epic_planner_generate_messages_nodejs
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir
@@ -5335,6 +5577,33 @@ src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_gener
 .PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_lisp"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
 # Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
@@ -5362,105 +5631,58 @@ src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_gener
 .PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir
 
 # All Build rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/ikd_tree.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/unit_shpere.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/depend
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=2 "Built target exploration_node"
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_gencpp"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 27
-	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule
 
 # Convenience name for target.
-exploration_node: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule
+epic_planner_gencpp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule
 
-.PHONY : exploration_node
+.PHONY : epic_planner_gencpp
 
 # clean rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean:
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/clean
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/clean
 
 #=============================================================================
-# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir
 
 # All Build rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/ikd_tree.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/lidar_map/CMakeFiles/unit_shpere.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/pointcloud_topo.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/pointcloud_topo/CMakeFiles/parallel_bubble_astar.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/global_planner/frontier_manager/CMakeFiles/frontier_manager.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/path_searching/CMakeFiles/path_searching.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all: src/EPIC/src/local_planner/minco_planner/CMakeFiles/plan_manage.dir/all
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/depend
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner"
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_gennodejs"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule
 
 # Convenience name for target.
-epic_planner: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/rule
+epic_planner_gennodejs: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule
 
-.PHONY : epic_planner
-
-# clean rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean:
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner.dir/clean
-
-#=============================================================================
-# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir
-
-# All Build rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all: src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/depend
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target custom_trajectory_sampler"
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all
-
-# Build rule for subdir invocation for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
-
-# Convenience name for target.
-custom_trajectory_sampler: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
-
-.PHONY : custom_trajectory_sampler
+.PHONY : epic_planner_gennodejs
 
 # clean rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean:
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/clean
 
 #=============================================================================
 # Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir
@@ -5490,31 +5712,172 @@ src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_gener
 .PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir
 
 # All Build rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_lisp"
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all: src/EPIC/src/local_planner/Utils/poly_traj/CMakeFiles/poly_traj.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all: src/EPIC/src/local_planner/Utils/traj_utils/CMakeFiles/traj_utils.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target custom_trajectory_sampler"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all
 
 # Build rule for subdir invocation for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
 
 # Convenience name for target.
-trajectory_msgs_generate_messages_lisp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+custom_trajectory_sampler: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
 
-.PHONY : trajectory_msgs_generate_messages_lisp
+.PHONY : custom_trajectory_sampler
 
 # clean rule for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_generate_messages_cpp"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_cpp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule
+
+.PHONY : epic_planner_generate_messages_cpp
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_generate_messages"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule
+
+.PHONY : epic_planner_generate_messages
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num=2 "Built target epic_planner_generate_messages_eus"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_eus: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule
+
+.PHONY : epic_planner_generate_messages_eus
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_geneus"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule
+
+# Convenience name for target.
+epic_planner_geneus: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule
+
+.PHONY : epic_planner_geneus
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target _epic_planner_generate_messages_check_deps_GoalService"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule
+
+# Convenience name for target.
+_epic_planner_generate_messages_check_deps_GoalService: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule
+
+.PHONY : _epic_planner_generate_messages_check_deps_GoalService
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/clean
 
 #=============================================================================
 # Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir
@@ -5542,6 +5905,87 @@ trajectory_msgs_generate_messages_py: src/EPIC/src/global_planner/exploration_ma
 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
 .PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_generate_messages_lisp"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_lisp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule
+
+.PHONY : epic_planner_generate_messages_lisp
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_genpy"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule
+
+# Convenience name for target.
+epic_planner_genpy: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule
+
+.PHONY : epic_planner_genpy
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir
+
+# All Build rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/all: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/all
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/depend
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wave/catkin_ws/build/CMakeFiles --progress-num= "Built target epic_planner_genlisp"
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wave/catkin_ws/build/CMakeFiles 0
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule
+
+# Convenience name for target.
+epic_planner_genlisp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule
+
+.PHONY : epic_planner_genlisp
+
+# clean rule for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/clean:
+	$(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/clean
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

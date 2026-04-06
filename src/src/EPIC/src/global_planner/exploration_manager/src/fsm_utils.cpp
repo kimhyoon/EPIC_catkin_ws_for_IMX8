@@ -91,12 +91,23 @@ int FastExplorationFSM::callExplorationPlanner() {
       plan_finish_time_exp = info->duration_;
     }
     Eigen::Vector3d start_exp = info->minco_traj_.getPos(plan_finish_time_exp);
-    path_next_goal.insert(path_next_goal.begin(), start_exp.cast<float>());
+
+    // start_exp 유효성 검사: NaN이거나 경로에서 50m 이상 벗어나면 무시
+    if (start_exp.hasNaN() ||
+        (start_exp.cast<float>() - path_next_goal[0]).norm() > 50.0) {
+        ROS_WARN("Invalid start_exp detected, skipping insertion");
+    } else {
+        path_next_goal.insert(path_next_goal.begin(), start_exp.cast<float>());
+    }
   }
   vector<Eigen::Vector3f> path_next_goal_tmp;
   path_next_goal_tmp.push_back(path_next_goal[0]);
 
   for (int i = 1; i < path_next_goal.size();) {
+    if (path_next_goal_tmp.size() > 500) {
+        ROS_ERROR("Resample overflow, aborting");
+        return FAIL;
+    }
     Eigen::Vector3f end_pt = path_next_goal_tmp.back();
     if ((path_next_goal[i] - end_pt).norm() > 1.0) {
       Eigen::Vector3f dir = (path_next_goal[i] - end_pt).normalized();
@@ -156,7 +167,8 @@ void FastExplorationFSM::CloudOdomCallback(const sensor_msgs::PointCloud2ConstPt
   double collision_time;
   bool safe = planner_manager_->checkTrajCollision(collision_time);
   if (!safe) {
-    transitState(PLAN_TRAJ, "safetyCallback: not safe, time:" + to_string(collision_time), true);
+    EXPL_STATE next_state = has_goal_rth_ ? PLAN_TRAJ_RTH : PLAN_TRAJ;
+    transitState(next_state, "safetyCallback: not safe, time:" + to_string(collision_time), true);
     if (collision_time < fp_->replan_time_ + 0.2)
       stopTraj();
   }

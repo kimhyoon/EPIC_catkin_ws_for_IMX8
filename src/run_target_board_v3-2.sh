@@ -31,7 +31,7 @@ CLOUD_TOPIC="/quad0_pcl_render_node/cloud"
 TARGET_WS="/home/root/catkin_ws"
 EPIC_DIR="$TARGET_WS/src/EPIC/src/global_planner"
 # Fixed config file path (no longer depends on MAP_NAME)
-CONFIG_FILE="$EPIC_DIR/exploration_manager/config/target_board_garage_v2-2.yaml"
+CONFIG_FILE="$EPIC_DIR/exploration_manager/config/target_board_garage_v2-3.yaml"
 TSP_DIR="$EPIC_DIR/utils/lkh_tsp_solver/resource"
 
 # Debug TSP directory
@@ -195,8 +195,8 @@ fi
 
 echo "All required nodes found"
 
-# Check if required topics are available (from SLAM)
-echo "   Checking for required input topics from SLAM..."
+# Check if required topics are available (from SLAM Module)
+echo "   Checking for required input topics from SLAM Module..."
 echo "   This may take up to 10 seconds..."
 
 # Input topics from SLAM
@@ -219,7 +219,7 @@ for topic in "${REQUIRED_TOPICS[@]}"; do
         echo "Topic $topic is available"
     else
         echo "   Warning: Topic $topic not available yet"
-        echo "   Make sure SLAM(Oodm, Cloud) is running on the target board"
+        echo "   Make sure SLAM Module(Oodm, Cloud) is running on the target board"
         echo "   Expected topics: $ODOM_TOPIC, $CLOUD_TOPIC"
     fi
 done
@@ -233,8 +233,8 @@ done
 
 echo "   Starting EPIC exploration algorithm..."
 echo "   Config: $CONFIG_FILE"
-echo "   Odometry from LIO-SAM: $ODOM_TOPIC"
-echo "   Pointcloud from LIO-SAM: $CLOUD_TOPIC"
+echo "   Odometry from SLAM Module: $ODOM_TOPIC"
+echo "   Pointcloud from SLAM Module: $CLOUD_TOPIC"
 echo ""
 echo "   Monitor the following topics for output:"
 echo "   - /planning/pos_cmd (position commands)"

@@ -93,11 +93,10 @@ done
 # Copy configuration files
 echo "   Copying configuration files..."
 CONFIG_FILES=(
+    "target_board_garage_v2-3.yaml"
     "target_board_garage_v2-2.yaml"
-    "target_board_garage_V2-1.yaml"
+    "target_board_garage_v2-1.yaml"
     "garage.yaml"
-    "cave.yaml"
-    "factory.yaml"
 )
 
 for config in "${CONFIG_FILES[@]}"; do
@@ -139,13 +138,13 @@ fi
 # Copy run script and setup script
 echo "  Copying scripts..."
 
-# Copy run_target_board_v3-2.sh
-if [ -f "$SCRIPT_DIR/run_target_board_v3-2.sh" ]; then
-    scp "$SCRIPT_DIR/run_target_board_v3-2.sh" $USERNAME@$TARGET_IP:$TARGET_PATH/
-    ssh $USERNAME@$TARGET_IP "chmod +x $TARGET_PATH/run_target_board_v3-2.sh"
-    echo "     run_target_board_v3-2.sh copied and made executable"
+# Copy run_target_board_v3-3.sh
+if [ -f "$SCRIPT_DIR/run_target_board_v3-3.sh" ]; then
+    scp "$SCRIPT_DIR/run_target_board_v3-3.sh" $USERNAME@$TARGET_IP:$TARGET_PATH/
+    ssh $USERNAME@$TARGET_IP "chmod +x $TARGET_PATH/run_target_board_v3-3.sh"
+    echo "     run_target_board_v3-3.sh copied and made executable"
 else
-    echo "     Warning: run_target_board_V3-2.sh not found in $SCRIPT_DIR"
+    echo "     Warning: run_target_board_v3-3.sh not found in $SCRIPT_DIR"
 fi
 
 
@@ -160,7 +159,36 @@ fi
 
 # Verify the files exist on target
 echo " Verifying scripts on target..."
-ssh $USERNAME@$TARGET_IP "ls -la $TARGET_PATH/run_target_board_v3-2.sh $TARGET_PATH/setup_epic_arm.sh" || echo "   Warning: Scripts not found on target"
+ssh $USERNAME@$TARGET_IP "ls -la $TARGET_PATH/run_target_board_v3-3.sh $TARGET_PATH/setup_epic_arm.sh" || echo "   Warning: Scripts not found on target"
+
+# Copy generated message/service Python files (required for rosservice call / rostopic)
+echo "  Copying generated ROS message/service files..."
+MSG_PACKAGES=(
+    "epic_planner"
+    "swarm_msgs"
+)
+
+for pkg in "${MSG_PACKAGES[@]}"; do
+    # Python message definitions
+    PY_MSG_PATH="$WORKSPACE_DIR/devel/lib/python3/dist-packages/$pkg"
+    if [ -d "$PY_MSG_PATH" ]; then
+        ssh $USERNAME@$TARGET_IP "mkdir -p $TARGET_PATH/devel/lib/python3/dist-packages/$pkg"
+        scp -r "$PY_MSG_PATH/"* $USERNAME@$TARGET_IP:$TARGET_PATH/devel/lib/python3/dist-packages/$pkg/
+        echo "    Copied $pkg Python message definitions"
+    else
+        echo "    Warning: $pkg Python messages not found at $PY_MSG_PATH"
+    fi
+
+    # Share directory (srv/msg definitions, cmake)
+    SHARE_MSG_PATH="$WORKSPACE_DIR/devel/share/$pkg"
+    if [ -d "$SHARE_MSG_PATH" ]; then
+        ssh $USERNAME@$TARGET_IP "mkdir -p $TARGET_PATH/devel/share/$pkg"
+        scp -r "$SHARE_MSG_PATH/"* $USERNAME@$TARGET_IP:$TARGET_PATH/devel/share/$pkg/
+        echo "    Copied $pkg share metadata"
+    else
+        echo "    Warning: $pkg share metadata not found at $SHARE_MSG_PATH"
+    fi
+done
 
 # Copy package.xml files for ROS package discovery
 echo " Copying ROS package metadata..."
@@ -192,7 +220,7 @@ for pkg in "${PACKAGE_DIRS[@]}"; do
 done
 
 # Verify deployment
-echo "🔍 Verifying deployment..."
+echo "   Verifying deployment..."
 ssh $USERNAME@$TARGET_IP "ls -la $TARGET_PATH/devel/lib/epic_planner/exploration_node" 2>/dev/null
 if [ $? -eq 0 ]; then
     echo " Main executable verified on target board"
@@ -215,10 +243,10 @@ echo ""
 echo " Next steps on target board:"
 echo "   1. cd $TARGET_PATH"
 echo "   2. bash setup_epic_arm.sh"
-echo "   3. ./run_target_board_v3-2.sh <HOST_PC_IP> garage"
+echo "   3. ./run_target_board_v3-3.sh <HOST_PC_IP> garage"
 echo ""
 echo " NEW: Trajectory Sampler Usage:"
-echo "   4. ./run_target_board_v3-2.sh garage true"
+echo "   4. ./run_target_board_v3-3.sh garage true"
 echo ""
 echo " Deployed files:"
 echo "   - $(echo "${EXECUTABLES[@]}" | wc -w) executable files"

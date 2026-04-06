@@ -385,8 +385,24 @@ bool FastPlannerManager::planExploreTraj(const vector<Eigen::Vector3f> &path,
   double time_lb;
   calculateTimelb(path_shorten, local_data_.curr_yaw_, local_data_.end_yaw_,
                   time_lb);
-  cout << "lower_bd = " << time_lb << endl;
-  
+
+  // Dynamic lower bound: also consider minimum travel time based on path length
+  double path_len = 0.0;
+  for (size_t i = 1; i < path_shorten.size(); ++i) {
+    path_len += (path_shorten[i] - path_shorten[i - 1]).norm();
+  }
+  double travel_time_lb = path_len / gcopter_config_->maxVelMag;
+  double yaw_time_lb = time_lb;
+  time_lb = std::max(time_lb, travel_time_lb);
+  cout << "lower_bd = " << time_lb
+       << " (yaw=" << yaw_time_lb << ", travel=" << travel_time_lb << ")"
+       << endl;
+
+  if (time_lb < 0.01) {
+    ROS_WARN("lower_bd too small (%.2e), using minimum time", time_lb);
+    time_lb = 0.5;
+  }
+
   // Measure trajectory generation time
   ros::Time traj_gen_start = ros::Time::now();
   if (std::isinf(gcopter.optimize(local_data_.minco_traj_,

@@ -56,17 +56,17 @@ CMAKE_BINARY_DIR = /home/wave/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -80,27 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target test
 test:
@@ -112,6 +102,16 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,36 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_cpp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_cpp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_cpp/fast:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
-.PHONY : trajectory_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_eus: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_eus
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_eus/fast:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
-.PHONY : trajectory_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule:
 	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule
 .PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/exploration_node.dir/rule
@@ -228,34 +198,49 @@ epic_planner/fast:
 .PHONY : epic_planner/fast
 
 # Convenience name for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule
 
 # Convenience name for target.
-custom_trajectory_sampler: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
+epic_planner_generate_messages_py: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/rule
 
-.PHONY : custom_trajectory_sampler
+.PHONY : epic_planner_generate_messages_py
 
 # fast build rule for target.
-custom_trajectory_sampler/fast:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build
-.PHONY : custom_trajectory_sampler/fast
+epic_planner_generate_messages_py/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_py.dir/build
+.PHONY : epic_planner_generate_messages_py/fast
 
 # Convenience name for target.
-src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-trajectory_msgs_generate_messages_nodejs: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+epic_planner_generate_messages_nodejs: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/rule
 
-.PHONY : trajectory_msgs_generate_messages_nodejs
+.PHONY : epic_planner_generate_messages_nodejs
 
 # fast build rule for target.
-trajectory_msgs_generate_messages_nodejs/fast:
-	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
-.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+epic_planner_generate_messages_nodejs/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_nodejs.dir/build
+.PHONY : epic_planner_generate_messages_nodejs/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
@@ -273,6 +258,156 @@ trajectory_msgs_generate_messages_lisp/fast:
 .PHONY : trajectory_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_eus: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_eus/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+.PHONY : trajectory_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule
+
+# Convenience name for target.
+epic_planner_gencpp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/rule
+
+.PHONY : epic_planner_gencpp
+
+# fast build rule for target.
+epic_planner_gencpp/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gencpp.dir/build
+.PHONY : epic_planner_gencpp/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule
+
+# Convenience name for target.
+epic_planner_gennodejs: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/rule
+
+.PHONY : epic_planner_gennodejs
+
+# fast build rule for target.
+epic_planner_gennodejs/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_gennodejs.dir/build
+.PHONY : epic_planner_gennodejs/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_nodejs: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_nodejs/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
+
+# Convenience name for target.
+custom_trajectory_sampler: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/rule
+
+.PHONY : custom_trajectory_sampler
+
+# fast build rule for target.
+custom_trajectory_sampler/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/custom_trajectory_sampler.dir/build
+.PHONY : custom_trajectory_sampler/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_cpp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/rule
+
+.PHONY : epic_planner_generate_messages_cpp
+
+# fast build rule for target.
+epic_planner_generate_messages_cpp/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_cpp.dir/build
+.PHONY : epic_planner_generate_messages_cpp/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/rule
+
+.PHONY : epic_planner_generate_messages
+
+# fast build rule for target.
+epic_planner_generate_messages/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages.dir/build
+.PHONY : epic_planner_generate_messages/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_eus: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/rule
+
+.PHONY : epic_planner_generate_messages_eus
+
+# fast build rule for target.
+epic_planner_generate_messages_eus/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_eus.dir/build
+.PHONY : epic_planner_generate_messages_eus/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule
+
+# Convenience name for target.
+epic_planner_geneus: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/rule
+
+.PHONY : epic_planner_geneus
+
+# fast build rule for target.
+epic_planner_geneus/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_geneus.dir/build
+.PHONY : epic_planner_geneus/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule
+
+# Convenience name for target.
+_epic_planner_generate_messages_check_deps_GoalService: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/rule
+
+.PHONY : _epic_planner_generate_messages_check_deps_GoalService
+
+# fast build rule for target.
+_epic_planner_generate_messages_check_deps_GoalService/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/_epic_planner_generate_messages_check_deps_GoalService.dir/build
+.PHONY : _epic_planner_generate_messages_check_deps_GoalService/fast
+
+# Convenience name for target.
 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
 	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
 .PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
@@ -286,6 +421,51 @@ trajectory_msgs_generate_messages_py: src/EPIC/src/global_planner/exploration_ma
 trajectory_msgs_generate_messages_py/fast:
 	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+epic_planner_generate_messages_lisp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/rule
+
+.PHONY : epic_planner_generate_messages_lisp
+
+# fast build rule for target.
+epic_planner_generate_messages_lisp/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_generate_messages_lisp.dir/build
+.PHONY : epic_planner_generate_messages_lisp/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule
+
+# Convenience name for target.
+epic_planner_genpy: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/rule
+
+.PHONY : epic_planner_genpy
+
+# fast build rule for target.
+epic_planner_genpy/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genpy.dir/build
+.PHONY : epic_planner_genpy/fast
+
+# Convenience name for target.
+src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule
+.PHONY : src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule
+
+# Convenience name for target.
+epic_planner_genlisp: src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/rule
+
+.PHONY : epic_planner_genlisp
+
+# fast build rule for target.
+epic_planner_genlisp/fast:
+	cd /home/wave/catkin_ws/build && $(MAKE) -f src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/build.make src/EPIC/src/global_planner/exploration_manager/CMakeFiles/epic_planner_genlisp.dir/build
+.PHONY : epic_planner_genlisp/fast
 
 src/custom_trajectory_sampler.o: src/custom_trajectory_sampler.cpp.o
 
@@ -428,21 +608,33 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... trajectory_msgs_generate_messages_cpp"
-	@echo "... trajectory_msgs_generate_messages_eus"
+	@echo "... install"
 	@echo "... exploration_node"
 	@echo "... install/local"
 	@echo "... epic_planner"
-	@echo "... custom_trajectory_sampler"
-	@echo "... trajectory_msgs_generate_messages_nodejs"
-	@echo "... list_install_components"
-	@echo "... install"
-	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... epic_planner_generate_messages_py"
+	@echo "... epic_planner_generate_messages_nodejs"
+	@echo "... install/strip"
+	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... test"
-	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_eus"
+	@echo "... epic_planner_gencpp"
+	@echo "... list_install_components"
+	@echo "... epic_planner_gennodejs"
+	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... custom_trajectory_sampler"
+	@echo "... epic_planner_generate_messages_cpp"
+	@echo "... epic_planner_generate_messages"
+	@echo "... epic_planner_generate_messages_eus"
+	@echo "... epic_planner_geneus"
+	@echo "... _epic_planner_generate_messages_check_deps_GoalService"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... epic_planner_generate_messages_lisp"
+	@echo "... epic_planner_genpy"
+	@echo "... epic_planner_genlisp"
 	@echo "... src/custom_trajectory_sampler.o"
 	@echo "... src/custom_trajectory_sampler.i"
 	@echo "... src/custom_trajectory_sampler.s"

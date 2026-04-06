@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/wave/catkin_ws/build
 include src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/progress.make
 
 src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command:
-	cd /home/wave/catkin_ws/build/src/EPIC/src/MARSIM/Utils/quadrotor_msgs && ../../../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Quaternion:geometry_msgs/Vector3
+	cd /home/wave/catkin_ws/build/src/EPIC/src/MARSIM/Utils/quadrotor_msgs && ../../../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/nxp-real-time-edge/2.5/sysroots/armv8a-poky-linux/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/wave/catkin_ws/src/src/EPIC/src/MARSIM/Utils/quadrotor_msgs/msg/SO3Command.msg std_msgs/Header:geometry_msgs/Quaternion:quadrotor_msgs/AuxCommand:geometry_msgs/Vector3
 
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: src/EPIC/src/MARSIM/Utils/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/build.make
