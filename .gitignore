@@ -3,3 +3,4 @@ devel/
 .catkin_tools/
 src/.vscode/
 logs/
+src/EPIC/src/MARSIM/map_generator/resource/garage.pcd
